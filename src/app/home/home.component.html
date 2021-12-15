@@ -17,14 +17,14 @@
               <a class="nav-link"
                  [ngClass]="{'active': listConfig.type === 'feed'}"
                  (click)="setListTo('feed')">
-                 My Feeds
+                 My Posts
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link"
                  [ngClass]="{'active': listConfig.type === 'all' && !listConfig.filters.tag}"
                  (click)="setListTo('all')">
-                 General Discusiions
+                 General Posts
               </a>
             </li>
             <li class="nav-item" [hidden]="!listConfig.filters.tag">
